@@ -1,0 +1,96 @@
+<html>
+    <script src="readGame.js"></script>
+    <head>
+        <style>
+            .column {
+            float: left;
+            width: 20%;
+            text-align: center;
+            }
+
+            .column_big{
+                float: left;
+                width: 50%;
+            }
+        
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+        </style>
+    </head>
+    <div class="row">
+        <div class="column_big">
+            <div class="row">
+                <div class="column" id="arco">
+                    | Arco |<br>
+                    0
+                </div>
+                <div class="column" id="boom">
+                    | Boom |<br>
+                    0
+                </div>
+                <div class="column" id="hook">
+                    | Hook |<br>
+                    0
+                </div>
+                <div class="column" id="bomb">
+                    | Bomb |<br>
+                    0
+                </div>
+                <div class="column" id="mush">
+                    | Mush |<br>
+                    0
+                </div>
+            </div>
+            <div class="row">
+                <div class="column" id="frod">
+                    | FRod |<br>
+                    0
+                </div>
+                <div class="column" id= "irod">
+                    | IRod |<br>
+                    0
+                </div>
+                <div class="column" id="bombos">
+                    | Bbos |<br>
+                    0
+                </div>
+                <div class="column" id="ether">
+                    | Ethe |<br>
+                    0
+                </div>
+                <div class="column" id="quake">
+                    | Quak |<br>
+                    0
+                </div>
+            </div>
+            <div class="row">
+                <div class="column" id="lamp">
+                    | Lamp |<br>
+                    0
+                </div>
+                <div class="column" id="hammer">
+                    | Hamr |<br>
+                    0
+                </div>
+            </div>
+            <div class="row">
+                <div class="column" id="pendants">
+                    | gbr |<br>
+                    0
+                </div>
+                <div class="column" id="crystals">
+                    |.342 7516|<br>
+                    0
+                </div>
+            </div>
+        </div>
+        <div class="column_big">
+            <button onclick="startTracker()">Iniciar</button> <button onclick="stopTracker()">Detener</button>
+            <div id="conectionStatus">Desconectado</div>
+            <div id="debug"></div>
+        </div>
+    </div>
+</html>
